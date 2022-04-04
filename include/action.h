@@ -13,33 +13,33 @@ typedef void (*action) (
 /**
  * @brief Get the action.
  * 
- * @param name the name of the action
- * @return action a action
+ * @param name name of the action
+ * @return the action
  */
 action get_action(char *name);
 
 /**
  * @brief Do the action gave.
  * 
- * @param name the name of the action
- * @param this the shell
- * @param args the command read by the shell
+ * @param name name of the action
+ * @param this shell
+ * @param args command read by the shell
  */
 void do_action(char *name, struct shell *this, const struct string_vector *args);
 
 /**
  * @brief Exit the shell.
  * 
- * @param this the shell
- * @param args the command read by the shell
+ * @param this shell
+ * @param args command read by the shell
  */
 void do_exit(struct shell *this, const struct string_vector *args);
 
 /**
  * @brief Change directory.
  * 
- * @param this the shell
- * @param args the command read by the shell
+ * @param this shell
+ * @param args command read by the shell
  */
 void do_cd(struct shell *this, const struct string_vector *args);
 
@@ -56,16 +56,16 @@ void do_help();
 /**
  * @brief Execute a subshell or a subshell command.
  * 
- * @param this the shell
- * @param args the command read by the shell
+ * @param this shell
+ * @param args command read by the shell
  */
 void do_system(struct shell *this, const struct string_vector *args);
 
 /**
  * @brief Print a reminder message within a specified time (in seconds). 
  * 
- * @param this the shell
- * @param args the command read by the shell
+ * @param this shell
+ * @param args command read by the shell
  */
 void do_reminder(struct shell *this, const struct string_vector *args);
 

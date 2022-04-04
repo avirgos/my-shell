@@ -23,7 +23,7 @@ cd my-shell/bin/
 ./my-shell
 ```
 
-![My-shell help](/img/my-shell-help.png)
+![my-shell-help](/img/my-shell-help.png)
 
 - exit
 - cd \<dir> : change directory

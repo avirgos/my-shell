@@ -19,42 +19,42 @@ struct shell {
 /**
  * @brief Initialize the shell.
  * 
- * @param s the shell to initialize
+ * @param s shell to initialize
  */
 void shell_init(struct shell *s);
 
 /**
  * @brief Run the shell.
  * 
- * @param s the shell to run
+ * @param s shell to run
  */
 void shell_run(struct shell *s);
 
 /**
  * @brief Destroy the shell.
  * 
- * @param s the shell to destroy
+ * @param s shell to destroy
  */
 void shell_destroy(struct shell *s);
 
 /**
  * @brief Read a line of the shell.
  * 
- * @param s the shell for which the line is read
+ * @param s shell for which the line is read
  */
 void shell_read_line(struct shell *s);
 
 /**
  * @brief Display the shell prompt.
  * 
- * @param s the shell for which the prompt is displayed
+ * @param s shell for which the prompt is displayed
  */
 void shell_prompt(struct shell *s);
 
 /**
  * @brief Interpret and execute a line of the shell.
  * 
- * @param s the shell for which the line is interpreted and executed
+ * @param s shell for which the line is interpreted and executed
  */
 void shell_execute_line(struct shell *s);
 #endif
